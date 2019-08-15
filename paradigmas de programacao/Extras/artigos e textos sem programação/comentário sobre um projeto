@@ -1,0 +1,29 @@
+Comentando sobre o projeto Python plays Grand Theft Auto V
+O que pretendo sobre este projeto:
+Com base neste projeto de “sentdex” eu aprendo mais sobre a biblioteca Opencv 
+e a linguagem de programação Python e desenvolver meu próprio aplicativo para 
+jogar um jogo do qual o aplicativo deverá controlar um veiculo tipo um carro 
+autônomo que respeite as leis de transito e verifique dados durante todo percurso 
+e decida quais ações ele deve fazer. O game que eu usarei será o Euro Truck 
+Simulator 2 no qual o meu programa deverá controlar um caminhão e andar por estradas 
+das quais há outros veículos e intemperes do clima, por isso ele devera verificar 
+as placas de trânsito, os sinais luminosos de outros veículos e sinaleiras, e também 
+tomar as melhores decisões para que não crie acidentes.  
+
+Segundo o autor do o objetivo deste projeto é usar o Python para jogar Grand Theft Auto 5.
+Fala dele: “Há muitas coisas para fazer no GTA V, mas o nosso primeiro objetivo será 
+criar um carro autônomo, bem scooter, neste caso. A idéia de usar o GTA V é que ele é
+um tipo de ambiente de caixa de areia tão grande e aberto que podemos controlar, por isso 
+é uma ótima área de desenvolvimento. Usando os métodos que usamos aqui, você deve ser capaz 
+de seguir com um jogo diferente também, certamente não é necessário que você use o GTA V, 
+mas é o que eu vou estar usando. ‘
+
+Link para a playlist de vídeos feitos por ele:
+https://www.youtube.com/watch?v=ks4MPfMq8aQ&list=PLQVvvaa0QuDeETZEOy4VdocT7TOjfSA8a
+Github: https://github.com/sentdex/pygta5 
+https://twitter.com/sentdex 
+https://www.facebook.com/pythonprogramming.net/
+https://pythonprogramming.net/game-frames-open-cv-python-plays-gta-v/
+
+link para vídeo do game Euro Truck Simulator 2 que irei fazer.
+( https://www.youtube.com/watch?time_continue=53&v=Wnv8ap2xICE )

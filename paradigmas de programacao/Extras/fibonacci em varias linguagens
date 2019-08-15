@@ -1,0 +1,85 @@
+    fibonacci em varias linguagens que aceitam paradigma funcional.
+Minha opinião sobre as linguagens de programação com paradigma funcional:
+  Apesar de serem linguagens diferentes todas elas são praticamente são muito parecidas quanto a forma de programar, o que muda um
+pouco de uma linguagem sobre a outra são apenas elementos esteticos quanto identação, sinais e declarações.
+  Eu, apesar de ter estudado este tipo de paradigma, acho que o paradigma funcional pode servir para algumas coisas muito especificas 
+na progrmação, portando não é um paradigma que gostei de programar apesar de ter aprendido e ter feito eu pensar mais na logica matematica
+sobre as questões.
+
+*Elixir
+defmodule Fib do 
+  def fibonacci(0) do 0 end
+  def fibonacci(1) do 1 end
+  def fibonacci(n) do fibonacci(n-1) + fibonacci(n-2) end
+end
+
+*Clojure
+(def fibonacci-seq 
+  ((fn rfib [a b] 
+     (lazy-seq (cons a (rfib b (+ a b)))))
+   0 1))
+   
+*java
+static long fibonacci(int n) {
+       return (n < 2) ? n : fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+*python
+fibonacci = lambda n,a=1,b=1:[b,0][n>0] or fibonacci(n-1,b,a+b)
+
+*Haskell
+fibonacci :: Int -> Int
+fibonacci 1 = 1
+fibonacci 0 = 0
+fibonacci n = fibonacci(n - 1) + fibonacci(n - 2)
+
+*Alice
+fun fibonacci 0 = 0
+   | fibonacci 1 = 1
+   | fibonacci n = spawn fibonacci(n-1) + fibonacci(n-2);
+   
+*Dyalog Apl
+fibonacci←{     
+        ⍺←0 1
+        ⍵=0:⍬⍴⍺
+        (1↓⍺,+/⍺)∇ ⍵-1
+}
+
+*F#
+let rec fibonacci n =
+    match n with
+    | 1 | 2 -> 1
+    | n -> fibonacci(n-1) + fibonacci(n-2)
+
+*OCaml
+let rec fibonacci = function
+  | 0 -> 0
+  | 1 -> 1
+  | n -> fibonacci (n-1) + fibonacci (n-2)
+
+*Standard ML 
+fun fibonacci n =
+  if n < 3 then
+    1
+  else
+    fibonacci (n-1) + fibonacci (n-2)
+
+*Scheme
+(define (fibonacci n)
+   (define (iter a b count)
+     (if (<= count 0)
+         a
+         (iter b (+ a b) (- count 1))))
+   (iter 0 1 n))
+
+*Scala
+def fibonacci( n : Int) : Int = n match {
+   case 0 | 1 => n
+   case _ => fibonacci( n-1 ) + fibonacci( n-2 )
+}
+
+linguagens que aceitam o paradigma funcional que falta implementar o fibonacci:
+Arc (linguagem de programação); Cat (linguagem de programação); Dylan (linguagem de programação); Joy (linguagem de programação);
+Lisp; Logo; Miranda (linguagem de programação); ML (linguagem de programação); Opa (linguagem de programação);
+R (linguagem de programação); Racket; REBOL; Roy (linguagem de programação); Scala (linguagem de programação); Scheme; Standard ML;
+Wolfram (linguagem de programação)
